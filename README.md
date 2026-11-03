@@ -1,12 +1,13 @@
 # Library Management API
 
-A REST API for managing a library's books, built with FastAPI and SQLite.
+A REST API for managing a library's books, built with FastAPI and SQLite, with a simple web page to use it.
 
 ## Features
 
 - Add, view, update and delete books (full CRUD)
 - Data saved in a SQLite database using SQLAlchemy
 - Borrow and return books, with error checks
+- Web page to add, borrow, return and delete books
 - Automatic API documentation page
 
 ## Tech Stack
@@ -16,6 +17,7 @@ A REST API for managing a library's books, built with FastAPI and SQLite.
 - SQLAlchemy
 - SQLite
 - Pydantic
+- HTML, CSS and JavaScript (frontend)
 
 ## How to Run
 
@@ -31,7 +33,13 @@ pip install fastapi uvicorn sqlalchemy
 python -m uvicorn main:app --reload
 ```
 
-3. Open the documentation page in your browser:
+3. Open the web page in your browser:
+
+```
+http://127.0.0.1:8000
+```
+
+4. Open the API documentation page:
 
 ```
 http://127.0.0.1:8000/docs
